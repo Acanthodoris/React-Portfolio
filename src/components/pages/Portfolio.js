@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/Portfolio.css";
-import { Card, Button } from "react-bootstrap";
+import { Carousel, Button } from "react-bootstrap";
 // import { useNavigate } from "react-router-dom";
 
 function Portfolio() {
@@ -50,12 +50,12 @@ function Portfolio() {
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src="holder.js/800x400?text=Third slide&bg=20232a"
-                        alt="Third slide"
+                        src="h../../assets/Carousel/workDayScheduler.png"
+                        alt="Work Day Scheduler"
                         />
 
                         <Carousel.Caption>
-                        <h3>Third slide label</h3>
+                        <h3>Work Day Scheduler</h3>
                         <a href="https://acanthodoris.github.io/My-First-Portfolio/"  target="_blank">GitHub</a>
                         <a href="https://acanthodoris.github.io/My-First-Portfolio/"  target="_blank">GitHub Page</a>
                         </Carousel.Caption>
@@ -63,7 +63,7 @@ function Portfolio() {
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src="holder.js/800x400?text=Third slide&bg=20232a"
+                        src="../../assets/Carousel/myFirstPortfolio.png"
                         alt="My First Portfolio"
                         />
 
@@ -76,7 +76,7 @@ function Portfolio() {
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src="holder.js/800x400?text=Third slide&bg=20232a"
+                        src="../../assets/Carousel/whatThatAnime.png"
                         alt="What's That Anime"
                         />
 
