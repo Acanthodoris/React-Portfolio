@@ -53,24 +53,18 @@ function Contact() {
             <Form>
 
             <Form.Group className="mb-2">
-            <InputGroup className="fullname">
                 <Form.Label>Your Name:</Form.Label>
                 <Form.Control inputType="text" placeholder="First LastName" value={fullName}  className="fullName" onChange={handleInputChange} />
-              </InputGroup>
               </Form.Group>
 
-              <Form.Group className="mb-2">
-              <InputGroup className="email">              
+              <Form.Group className="mb-2">            
                 <Form.Label>Email address:</Form.Label>
                 <Form.Control inputType="text" placeholder="your.email@here.com" value={email} className="email" onChange={handleInputChange} />
-              </InputGroup>
               </Form.Group>
 
               <Form.Group className="mb-2" >
-              <InputGroup className="message">
                 <Form.Label>Message:</Form.Label>
                 <Form.Control as="textarea" rows={3}  value={message} className="message" onChange={handleInputChange} />
-              </InputGroup>
               </Form.Group>
 
               <Button variant="primary" onClick={handleFormSubmit}>Submit</Button>{" "}
