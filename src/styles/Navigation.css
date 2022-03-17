@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+/* font-family: 'Amiri', serif; */
+
+.navButtons {
+    font-family: 'Amiri', serif;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.a {
+    text-decoration: none;
+    color: white;
+}

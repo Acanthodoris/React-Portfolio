@@ -7,7 +7,7 @@ function Footer() {
     <section className="footer">
       <div className="d-flex justify-content-space-evenly flex-direction-row">
           <div>
-            <a class="footer" href="https://www.linkedin.com/in/rebeccah-may/" target="_blank">
+            <a className="footer" href="https://www.linkedin.com/in/rebeccah-may/" target="_blank">
               <p>LinkedIn</p>
             </a>
           </div>

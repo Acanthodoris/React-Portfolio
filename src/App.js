@@ -2,10 +2,10 @@ import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Footer from "./components/Footer.js";
 import Header from "./components/Header.js";
-// import About from "./components/pages/About";
-// import Contact from "./components/pages/Contact";
+import About from "./components/pages/About";
+import Contact from "./components/pages/Contact";
 import Portfolio from "./components/pages/Portfolio";
-// import Resume from "./components/pages/Resume";
+import Resume from "./components/pages/Resume";
 import "./styles/App.css";
 
 function App() {
@@ -15,10 +15,10 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Portfolio />} />
-          {/* <Route path="/contacts" element={<Contact />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/resume" element={<Resume />} /> */}
+          <Route path="/" element={<About />} />
+          <Route path="/contacts" element={<Contact />} />
+          <Route path="/protfolio" element={<Portfolio />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
         <Footer />
       </BrowserRouter>

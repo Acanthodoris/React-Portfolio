@@ -5,12 +5,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #212529;
-    min-height: 89.8vh;
+    min-height: 83.6vh;
     font-family: 'Amiri', serif;
 }
 
-.container {
-    padding-top: 4rem;
+.needSpace {
+    padding-top: 2rem;
 }
 
 .p {

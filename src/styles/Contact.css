@@ -5,9 +5,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
-    min-height: 87.8vh;
+    min-height: 83.6vh;
     font-family: 'Amiri', serif;
     padding-top: 6rem;
+}
+
+.container {
+    padding-top: 0 !important;
 }
 
 .form{

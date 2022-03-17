@@ -1,5 +1,5 @@
 import React from "react";
-// import Navigation from "./Navigation";
+import Navigation from "./Navigation";
 import "../styles/Header.css";
 
 function Header() {
@@ -7,7 +7,7 @@ function Header() {
       <div className="header">
         <div className="bg-dark d-flex justify-content-around">
           <div>
-            {/* <Navigation /> */}
+            <Navigation />
           </div>
         </div>
       </div>
