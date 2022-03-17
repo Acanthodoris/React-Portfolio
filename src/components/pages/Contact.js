@@ -11,38 +11,35 @@ function Contact() {
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
+
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
 
-    // Based on the input type, we set the state of either email, username, and password
-    // TODO: Add an else statement to the end that will set the password to the value of 'inputValue'
-
-    if (inputType === "email") {
-      setEmail(inputValue);
-    } else if (inputType === "name") {
-      setName(inputValue);
-    } else {
-      setMessage(inputValue);
+    switch(inputType) {
+      case (inputType === "email") :
+        setEmail(inputValue);
+        break;
+      case (inputType === "fullName"):
+        setName(inputValue);
+        break;
+      default:
+        setMessage(inputValue);
     }
+
+
   };
 
   const handleFormSubmit = (e) => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
+
     e.preventDefault();
 
-    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
     if (!validateEmail(email) || !fullName) {
       setErrorMessage("Something is not quite right. Please check your email and leave a name. ~Thank you!");
-      // We want to exit out of this code block if something is wrong so that the user can correct it
       return;
-      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
     }
 
-    // If successful, we want to clear out the input after registration.
     setName("");
-    // TODO: Set the password back to an empty string after the user clicks submit
     setMessage("");
     setEmail("");
     alert(`Hello ${fullName}`);
@@ -54,18 +51,28 @@ function Contact() {
         <div className="row">
           <div className="col-lg-10 bg-dark mx-auto text-white mb-4">
             <Form>
+
             <Form.Group className="mb-2">
+            <InputGroup className="fullname">
                 <Form.Label>Your Name:</Form.Label>
-                <Form.Control type="text" placeholder="First LastName" value={fullName}  name="fullName" onChange={handleInputChange} />
+                <Form.Control inputType="text" placeholder="First LastName" value={fullName}  className="fullName" onChange={handleInputChange} />
+              </InputGroup>
               </Form.Group>
-              <Form.Group className="mb-2">              
+
+              <Form.Group className="mb-2">
+              <InputGroup className="email">              
                 <Form.Label>Email address:</Form.Label>
-                <Form.Control type="email" placeholder="your.email@here.com" value={email} name="email" onChange={handleInputChange} />
+                <Form.Control inputType="text" placeholder="your.email@here.com" value={email} className="email" onChange={handleInputChange} />
+              </InputGroup>
               </Form.Group>
+
               <Form.Group className="mb-2" >
+              <InputGroup className="message">
                 <Form.Label>Message:</Form.Label>
-                <Form.Control as="textarea" rows={3}  value={message} name="message" onChange={handleInputChange} />
+                <Form.Control as="textarea" rows={3}  value={message} className="message" onChange={handleInputChange} />
+              </InputGroup>
               </Form.Group>
+
               <Button variant="primary" onClick={handleFormSubmit}>Submit</Button>{" "}
             </Form>
             {errorMessage && (
