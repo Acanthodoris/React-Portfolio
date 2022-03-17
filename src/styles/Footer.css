@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+/* font-family: 'Amiri', serif; */
+
+p {
+    font-family: 'Amiri', serif;
+    text-decoration: none;
+    color: white;
+    padding: 9px;
+}
+
+.footer{
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+}

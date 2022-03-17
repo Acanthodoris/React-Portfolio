@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
+.Me {
+    background-image: url('/src/assets/moonjellies.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #212529;
+    min-height: 89.8vh;
+    font-family: 'Amiri', serif;
+}
+
+.container {
+    padding-top: 4rem;
+}
+
+.p {
+    background-color: #212529;
+    margin-top: -8px;
+    margin-bottom: 0rem;
+    padding: 12px;
+}

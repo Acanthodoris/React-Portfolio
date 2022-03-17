@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Footer from "./components/Footer.js";
+import Header from "./components/Header.js";
+// import About from "./components/pages/About";
+// import Contact from "./components/pages/Contact";
+import Portfolio from "./components/pages/Portfolio";
+// import Resume from "./components/pages/Resume";
+import "./styles/App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="text-white bg-dark">Rebeccah May Mullan</h1>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Portfolio />} />
+          {/* <Route path="/contacts" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<Resume />} /> */}
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
