@@ -21,7 +21,7 @@ function Contact() {
 
     if (inputType === "email") {
       setEmail(inputValue);
-    } else if (inputType === "Name") {
+    } else if (inputType === "name") {
       setName(inputValue);
     } else {
       setMessage(inputValue);
@@ -54,17 +54,17 @@ function Contact() {
         <div className="row">
           <div className="col-lg-10 bg-dark mx-auto text-white mb-4">
             <Form>
-            <Form.Group className="mb-2" controlId="formFullName">
+            <Form.Group className="mb-2">
                 <Form.Label>Your Name:</Form.Label>
-                <Form.Control type="text" placeholder="First LastName" value={fullName} onChange={handleInputChange} />
+                <Form.Control type="text" placeholder="First LastName" value={fullName}  name="fullName" onChange={handleInputChange} />
               </Form.Group>
               <Form.Group className="mb-2">              
                 <Form.Label>Email address:</Form.Label>
-                <Form.Control type="email" placeholder="your.email@here.com" value={email} onChange={handleInputChange}/>
+                <Form.Control type="email" placeholder="your.email@here.com" value={email} name="email" onChange={handleInputChange} />
               </Form.Group>
               <Form.Group className="mb-2" >
                 <Form.Label>Message:</Form.Label>
-                <Form.Control as="textarea" rows={3} onChange={handleInputChange} value={message} />
+                <Form.Control as="textarea" rows={3}  value={message} name="message" onChange={handleInputChange} />
               </Form.Group>
               <Button variant="primary" onClick={handleFormSubmit}>Submit</Button>{" "}
             </Form>
