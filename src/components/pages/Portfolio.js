@@ -100,8 +100,8 @@ function Portfolio() {
                         <Carousel.Caption>
                         <div class="cantSee">
                         <h3>What's That Anime</h3>
-                        <a href="https://acanthodoris.github.io/My-First-Portfolio/"  target="_blank">GitHub</a>
-                        <a href="https://acanthodoris.github.io/My-First-Portfolio/"  target="_blank">GitHub Page</a>
+                        <a href="https://github.com/AndrewTranMSW/whatsThatAnime"  target="_blank">GitHub</a>
+                        <a href="https://andrewtranmsw.github.io/whatsThatAnime/"  target="_blank">GitHub Page</a>
                         </div>
                         </Carousel.Caption>
                     </Carousel.Item>
