@@ -6,7 +6,7 @@ import PDF from "../../assets/Resume.pdf";
 function Resume() {
 
   return (
-    <section className="bg-dark">
+    <div class="Resume">
       <div className="container">
         <div className="row">
           <div className="col-lg-10 mx-auto text-white mb-4">
@@ -43,7 +43,7 @@ function Resume() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
