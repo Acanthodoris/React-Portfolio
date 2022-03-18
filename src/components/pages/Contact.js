@@ -17,10 +17,18 @@ function Contact() {
     const inputValue = target.value;
 
     switch(inputType) {
-      case (inputType === "email") :
+      case "email":
         setEmail(inputValue);
+        if (!validateEmail(email))
+        {
+          setErrorMessage("email format is still not correct, please correct email format");
+        }
+        else
+        {
+          setErrorMessage("");
+        }
         break;
-      case (inputType === "fullName"):
+      case "fullName":
         setName(inputValue);
         break;
       default:
@@ -54,17 +62,17 @@ function Contact() {
 
             <Form.Group className="mb-2">
                 <Form.Label>Your Name:</Form.Label>
-                <Form.Control inputType="text" placeholder="First LastName" value={fullName}  className="fullName" onChange={handleInputChange} />
+                <Form.Control inputType="text" placeholder="First LastName" value={fullName}  className="fullName" name="fullName" required="true" onChange={handleInputChange} />
               </Form.Group>
 
               <Form.Group className="mb-2">            
                 <Form.Label>Email address:</Form.Label>
-                <Form.Control inputType="text" placeholder="your.email@here.com" value={email} className="email" onChange={handleInputChange} />
+                <Form.Control inputType="text" placeholder="your.email@here.com" value={email} className="email" name="email" required="true" onChange={handleInputChange} />
               </Form.Group>
 
               <Form.Group className="mb-2" >
                 <Form.Label>Message:</Form.Label>
-                <Form.Control as="textarea" rows={3}  value={message} className="message" onChange={handleInputChange} />
+                <Form.Control as="textarea" rows={3}  value={message} className="message" required="true" onChange={handleInputChange} />
               </Form.Group>
 
               <Button variant="primary" onClick={handleFormSubmit}>Submit</Button>{" "}
