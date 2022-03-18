@@ -19,7 +19,7 @@
 
 
 ## Demo:
-![a demo of how to test the app](/React-Portfolio/src/assets/demo.gif)
+![a demo of how to test the app](/demo.gif)
 
 ## Links:
 ### [GitHub](https://github.com/Acanthodoris/React-Portfolio)
