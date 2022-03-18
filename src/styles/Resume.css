@@ -2,7 +2,7 @@
 /* font-family: 'Amiri', serif; */
 
 .Resume {
-    background-image: url('/src/assets/moonjellies.jpg');
+    background-image: url('../assets/moonjellies.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;

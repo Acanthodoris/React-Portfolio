@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
 
 .Me {
-    background-image: url('/src/assets/moonjellies.jpg');
+    background-image: url('../assets/moonjellies.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
